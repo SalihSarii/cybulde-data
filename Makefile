@@ -25,9 +25,9 @@ export
 guard-%:
 	@#$(or ${$*}, $(error $* is not set))
 
-## Call entrypoint
-entrypoint: up
-	$(DOCKER_COMPOSE_EXEC) python ./cybulde/entrypoint.py
+## Version data
+version-data: up
+	$(DOCKER_COMPOSE_EXEC) python ./cybulde/version-data.py
 
 ## Starts jupyter lab
 notebook: up
