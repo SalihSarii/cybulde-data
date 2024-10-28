@@ -14,8 +14,9 @@ def initialize_dvc() -> None:
     if is_dvc_initialized():
         DATA_UTILS_LOGGER.info("DVC is already initialized")
         return
+    DATA_UTILS_LOGGER.info('Initializing DVC')
     run_shell_command("dvc init")
     run_shell_command("dvc config core.analytics false")
     run_shell_command("dvc config core.autostage true")
     run_shell_command("git add .dvc")
-    run_shell_command("git commit -m 'Initiliazed DVC'")
+    run_shell_command("git commit -nm 'Initiliazed DVC'")
