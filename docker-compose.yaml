@@ -22,4 +22,3 @@ services:
     ipc: host
     init: true
 
-
