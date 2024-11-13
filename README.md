@@ -1,2 +1,2 @@
-# cybulde-project-template
-A simple template for Cybulde project
+# Cybulde Project Data Versioning
+This repo contains Data Versioning with DVC
